@@ -61,7 +61,7 @@
       var formatDataForChart = function(content) {
         var first_item = _.get(content, '[0]', {})
         var column_labels = _.map(_.omit(first_item, ['cycles']), function(val, key) {
-          if (key != 'os')
+          if (key != 'cycles')
           return key
         })
 
