@@ -1,0 +1,37 @@
+---
+run_simulation_days: 15
+workers:
+  NoMetricsNoPrices_riskAverse: 2
+  NoMetricsNoPrices_random: 2
+  NoMetricsWithPrices_riskAverse: 2
+  NoMetricsWithPrices_rewardSeeking: 2
+  HealthMetricsNoPrices: 2
+  HealthMetricsWithPrices: 2
+worker_starting_balance: 1000
+worker_skills:
+- 1
+funders:
+- randomPay
+- fixedPay
+- inversePay
+- correlatedPay
+funder_starting_balance: 100000000
+number_of_issues_daily_per_funder: 2
+prices:
+- 0.95
+- 0.9
+- 0.85
+- 0.8
+difficulties:
+  1: 30
+  2: 30
+  3: 30
+  4: 10
+difficulty_error_rate: 0
+maturation_days_in_future: 2
+bmxsim_output: 1
+bmx_save_events: 'FALSE'
+bmx_save_metrics: 'FALSE'
+git_sha: db6c514c0c28549e3f9cdd3fc4845ece62ac8185
+simulation_date: '2018-06-09 07:58:59'
+finished: SIMULATION FINISHED WITHOUT ERROR
