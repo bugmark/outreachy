@@ -59,7 +59,7 @@ with open(daily_balance_csv, "w") as balance:
 
             y=[u.tolist() for u in y]
             #print(type(y[0]))
-            print(",{}".format(y), end="", file=balance)
+            print(",{}".format(y[0]), end="", file=balance)
             #print(",{}".format(earn), end="", file=earning)
             #print(",{}".format(f), end="", file=freq)
 
